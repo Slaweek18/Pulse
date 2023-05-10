@@ -1,0 +1,18 @@
+.form{
+
+    margin-top: 36px;
+    display:flex;
+    flex-direction:column;
+    max-width:303px;
+    
+    & input{
+        height: 54px;
+        border-radius: 5px;
+        border:none;
+        margin-bottom: 11px;
+        padding-left: 21px;
+    }
+    & input:last-of-type{
+        margin-bottom: 17px;
+    }
+}

@@ -15,6 +15,16 @@
         font-size: 33px;
 
     }
+
+    .carousel{
+
+        &__inner{
+            width:80%;
+            img{
+                width:100%;
+            }
+        }
+    }
     
 }
 

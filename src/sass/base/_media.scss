@@ -18,11 +18,12 @@
 
     .carousel{
 
-        &__inner{
+        img{
             width:80%;
-            img{
-                width:100%;
-            }
+        }
+
+        .prev,.next{
+            display:none;
         }
     }
     
@@ -109,6 +110,10 @@
         &__text{
             text-align:center;
         }
+    }
+
+    .carousel{
+        padding:61px 0;
     }
 }
 
@@ -201,6 +206,9 @@
             line-height: 25px;
 
         }
+    }
+    .carousel{
+        padding:40px 0;
     }
 
 }

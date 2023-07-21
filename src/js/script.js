@@ -1,18 +1,24 @@
-$(document).ready(function(){
-  $('.carousel__inner').slick({
-      speed:1200,
-      infinite:true,
-      prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
-      responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              arrows: false,
-              dots: true
-            }
-          }
-      ]
-  });
+var slider=tns({
+  container: '.carousel__inner',
+  items:1,
+  controls:false,
+  nav:false,
+  responsive:{
+    0:{
+      nav:true,
+      navPosition:'bottom',
       
-});
+    },
+    992:{
+      nav:false,
+    }
+  }
+})
+
+document.querySelector('.next').onclick = function () {
+  slider.goTo('next');
+};
+
+document.querySelector('.prev').onclick = function () {
+  slider.goTo('prev');
+};

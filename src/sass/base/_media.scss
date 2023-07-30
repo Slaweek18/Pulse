@@ -2,6 +2,12 @@
     .container{
         width:85vw;
     }
+
+    .catalog{
+        &__content{
+            justify-content: space-evenly;
+        }
+    }
 }
 
 @media (max-width: 991.98px){
@@ -115,6 +121,20 @@
     .carousel{
         padding:61px 0;
     }
+
+    .catalog{
+        &__tabs{
+            margin-top: 25px;
+        }
+
+        &__tab{
+            font-size: 15px;
+        }
+
+        &__content{
+            margin-top: 40px;
+        }
+    }
 }
 
 @media (max-width: 575.98px){
@@ -209,6 +229,19 @@
     }
     .carousel{
         padding:40px 0;
+    }
+
+    .catalog{
+        &__tab{
+            display:flex;
+            font-size: 13px;
+            line-height: 1;
+            padding:0px 7px;
+            div{
+                margin:auto;
+            }
+        }
+
     }
 
 }

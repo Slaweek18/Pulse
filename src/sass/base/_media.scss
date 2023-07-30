@@ -135,6 +135,34 @@
             margin-top: 40px;
         }
     }
+
+    
+    .feedback{
+
+        padding:50px 0px 38px 0px;
+
+        &__item{
+            flex-direction: column;
+        }
+
+        &__item:nth-child(2){
+            margin-top: 40px;
+        }
+
+        &__img{
+            display:block;
+            margin: 0 auto;
+        }
+
+        &__name,&__count,&__text{
+            text-align: center;
+        }
+
+        &__text{
+            padding: 0;
+        }
+
+    }
 }
 
 @media (max-width: 575.98px){

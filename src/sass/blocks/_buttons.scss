@@ -8,6 +8,14 @@
     font-weight: 500;
     color:#FFFFFF;
     text-transform: uppercase;
+    transition: 0.5s all;
+    &:hover{
+        background-color: $hover-color;
+    }
+    &:active{
+        background-color: #4a0202;
+    }
+
     &_main{
         width: 303px;
         height: 54px;   

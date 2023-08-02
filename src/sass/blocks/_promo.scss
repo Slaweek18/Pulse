@@ -51,6 +51,9 @@
             color:#FFFFFF;
             text-decoration: underline;
             text-transform: uppercase;
+            &:hover{
+                color: black;
+            }
         }
     }
 }

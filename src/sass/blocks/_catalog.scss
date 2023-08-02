@@ -89,14 +89,14 @@
             margin-top: 10px;
             display: block;
             text-align: center;
-            color: #C70101;
+            color: $main-color;
             font-size: 14px;
             font-style: normal;
             font-weight: 500;
             text-decoration: underline;
             text-transform: uppercase;
             &:hover{
-                color:$main-color;
+                color: $hover-color;
             }
         }
         &__footer{
@@ -180,7 +180,7 @@
             text-decoration-line: underline;
             text-transform: uppercase;
             &:hover{
-                color: $main-color;
+                color: $hover-color;
             }
         }
     

@@ -62,4 +62,37 @@ $(document).ready(function() {
     $('.overlay, #consultation, #thanks, #order').fadeOut("slow");
   });
 
+  function validForm(selector){
+    $(selector).validate({
+      rules: {
+        name:{
+          required:true,
+          minlength:3
+        },
+        phone:"required",
+        email:{
+          required:true,
+          email:true
+        }
+      },
+      messages:{
+        name:{
+          required:"Введіть своє ім'я",
+          minlength: $.validator.format("Введіть {0} символи")
+        },
+        phone:"Введіть свій номер",
+        email:{
+          required:"Введіть свою пошту",
+          email:"Некоректна адреса"
+        }
+      }
+    });
+  }
+
+  validForm("#consultation .feed-form");
+  validForm("#consultation-form");
+  validForm("#order .feed-form");
+
+
+
 }); 

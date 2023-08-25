@@ -118,4 +118,19 @@ $(document).ready(function() {
     return false;
   })
 
+  $(window).scroll(function () {
+    
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else
+      $('.pageup').fadeOut();
+      
+  })
+
+  $("a[href^='#']").on('click', function(event) {
+      const _hash = $(this).attr("href");
+      $('html, body').animate({ scrollTop: $(_hash).offset().top });
+      return false;
+    });
+
 }); 

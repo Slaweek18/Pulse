@@ -131,6 +131,12 @@ $(document).ready(function() {
       const _hash = $(this).attr("href");
       $('html, body').animate({ scrollTop: $(_hash).offset().top });
       return false;
-    });
+  });
+  
+  new WOW(
+    {
+      animateClass:"animate__animated"
+    }
+  ).init();
 
 }); 

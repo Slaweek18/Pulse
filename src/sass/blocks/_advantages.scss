@@ -22,6 +22,12 @@
             margin: 0 auto;
         }    
     }
+    &__icon{
+        animation: heartbeat 2s ease infinite;
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
     &__text{
         font-weight: 300;
         font-size: 14px;

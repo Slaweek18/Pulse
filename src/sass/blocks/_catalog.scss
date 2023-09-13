@@ -142,6 +142,10 @@
             margin-bottom: 0;
             transition: all 0.5s;
             transform: translateX(0%);
+
+            ul{
+                padding-left: 0;
+            }
             &_active{
                 transform: translateX(-100%);
                 margin-left: 0px;
